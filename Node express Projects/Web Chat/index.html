@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatzinho o/</title>
+</head>
+
+<body>
+  <ul class="user-list">
+    <li class="nickname" data-testid="online-user"></li>
+  </ul>
+  <label for="nick">
+    Seu nick o/:
+    <input class="nick-box" data-testid="nickname-box" type="text" id="nick" name="nick" />
+    <button data-testid="nickname-button" class="nick-button">Trocar o nick!</button>
+  </label>
+  <ul class="chat"></ul>
+  <form>
+    <label for="message">
+      <input data-testid="message-box" type="text" id="message">
+    </label>
+    <button data-testid="send-button" type="submit">Enviar</button>
+  </form>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+<script src="./script.js"></script>
+
+</html>
